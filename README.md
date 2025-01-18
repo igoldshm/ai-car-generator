@@ -6,7 +6,7 @@ Generate car images from segmentation maps using the carvana dataset.
 ## Model Architecture
 This model was trained to generate a synthetic image of a car from a segmentation map using a pix2pixHD conditional generative adversarial network (CGAN).
 ## Dataset 
-We use the single car image segmentation dataset - Carvana Image Masking (PNG) https://www.kaggle.com/datasets/ipythonx/carvana-image-masking-png. 
+For this project we use the single car image segmentation dataset - Carvana Image Masking (PNG) https://www.kaggle.com/datasets/ipythonx/carvana-image-masking-png. 
 ## Data preperation
 The entire dataset contains 5088 image-mask pairs and the dimensions of each image are 448x320 pixels. Since this model is intended for initial testing, we decided to use a subset of 701 pairs for quicker fine-tuning.
 We created an imageDatastore and a pixelLabelDatastore to store the images and the pixel label images repectively.
