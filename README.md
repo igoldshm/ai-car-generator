@@ -20,5 +20,6 @@ We performed the following preprocessing steps to augment the data for training:
 - Resized the images and labels to the network's output size of **576-by-768 pixels** using bicubic downsampling for images and nearest-neighbor downsampling for labels.
 - Converted the single-channel segmentation map into a 32-channel one-hot encoded segmentation map using the `onehotencode` function.
 - Randomly applied horizontal flipping to the image and pixel label pairs to augment the dataset.
+- ## Model Training
 - ## Model Evaluation
 - ## Deployment
