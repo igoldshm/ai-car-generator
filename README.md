@@ -29,14 +29,14 @@ The input to each discriminator is the depth-wise concatenation of the one-hot e
 ### Model Gradient and Loss Functions
 #### Generator Loss
 The overall generator loss is a weighted sum of all three losses. λ1, λ2, and λ3 are the weight factors for adversarial loss, feature matching loss, and perceptual loss, respectively:
-- lossGenerator=λ1∗lossAdversarialGenerator+λ2∗lossFeatureMatching+λ3∗lossPerceptual
+- GeneratorLoss=λ1∗lossAdversarialGenerator+λ2∗lossFeatureMatching+λ3∗lossPerceptual
 #### Discriminator Loss
 The discriminator's objective is to accurately differentiate between ground truth images and generated images. Its loss function consists of two components:
 
 -The squared difference between a vector of ones and the discriminator's predictions for real images.
 -The squared difference between a vector of zeros and the discriminator's predictions for generated images
 
-- lossDiscriminator=(1−Yreal)^2+(0−Y'generated)^2
+- DiscriminatorLoss=(1−Yreal)^2+(0−Y'generated)^2
 
 ## Model Evaluation
 ## Deployment
