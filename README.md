@@ -30,7 +30,5 @@ The input to each discriminator is the depth-wise concatenation of the one-hot e
 - #### Generator Loss
 - The overall generator loss is a weighted sum of all three losses. λ1, λ2, and λ3 are the weight factors for adversarial loss, feature matching loss, and perceptual loss, respectively:
 - lossGenerator=λ1∗lossAdversarialGenerator+λ2∗lossFeatureMatching+λ3∗lossPerceptual
-- ####
-- 
 - ## Model Evaluation
 - ## Deployment
