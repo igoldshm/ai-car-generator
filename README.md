@@ -36,7 +36,7 @@ The discriminator's objective is to accurately differentiate between ground trut
 -The squared difference between a vector of ones and the discriminator's predictions for real images.
 -The squared difference between a vector of zeros and the discriminator's predictions for generated images
 
-- lossDiscriminator=(1−Yreal)^2+(0−ˆYgenerated)^2
+- lossDiscriminator=(1−Yreal)^2+(0−Y'generated)^2
 
 ## Model Evaluation
 ## Deployment
