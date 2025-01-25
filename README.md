@@ -38,5 +38,15 @@ The discriminator's objective is to accurately differentiate between ground trut
 
 - DiscriminatorLoss=(1−Yreal)^2+(0−Y'generated)^2
 
+
+#### Training Parameters
+We configure the Adam optimizer and train the model for 28 epochs, applying the same settings to both the generator and discriminator networks:
+
+1. We set the learning rate to **0.0002**.
+2. We initialize the trailing average gradient and gradient-square decay rates with an empty array **[]**.
+3. We use a gradient decay factor of **0.5** and a squared gradient decay factor of **0.999**.
+4. We specify a mini-batch size of **1** for training.
+
 ## Model Evaluation
+We generated images for the first and third test image.
 ## Deployment
